@@ -24,10 +24,18 @@ h2{
 }
 
 img{
-    max-width: 768px;
-    max-height: auto;
+    width: 70%;
+    height: auto;
     border: #004346 6px solid;
     margin: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .skip {
@@ -64,6 +72,12 @@ nav ul{
     padding: 14px 16px;
     text-decoration: none;
 }
+
+.navbar li a.active {
+    background-color: #BEE5BF;
+    color: #004346;
+}
+
 .navbar a:hover{
     background-color: #BEE5BF;
     color: #004346;
@@ -90,7 +104,7 @@ ul{
 
 .foodpics {
     display: grid;
-    grid-template-columns:300px 300px 300px;
+    grid-template-columns:1fr 1fr 1fr;
     border: #D90166 3px dotted;
     max-width: 100%;
     grid-gap: 10px;
@@ -112,7 +126,7 @@ ul{
 
 .gallery{
     display: grid;
-    grid-template-columns:300px 300px;
+    grid-template-columns:1fr 1fr;
     border: #D90166 3px dotted;
     width: 100%;
     grid-gap: 30px;
@@ -122,8 +136,9 @@ ul{
 
 .top{
     display: block;
-    size: 50%;
-    size-adjust: auto;
+    width: 70%;
+    height: auto;
+
 }
 
 .sect{
